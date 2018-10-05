@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+   <form id = 'form'>
+
+    <input type="file"  />
+    <button type ='button' onclick= 'upload()'>上传</button>
+   </form> 
+   
+
+
+   <script>
+     function upload(e) {
+       var form = document.getElementById('form')
+        // e.preventDefault();
+        var formData = new FormData(form)
+        var xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = () => {
+          if (xhr.state === 200) {
+            alert('成功')
+          } else {
+            alert('失败')
+          }
+        } 
+        console.log(formData)
+        xhr.open('GET',`http://192.168.6.133:8080/muom/webpart/Report/?action=uploadReport&report=${formData}`,true)
+        xhr.send(null)
+     }
+   </script>
+</body>
+</html>

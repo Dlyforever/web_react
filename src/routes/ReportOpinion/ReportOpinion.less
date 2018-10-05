@@ -1,0 +1,199 @@
+
+.route-report-opinion {
+  position: relative;
+  margin: 10px 20px 20px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  .top {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 44px;
+    line-height: 46px;
+    padding:0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+     .ant-btn{
+      font-size: 16px;
+     }
+    .upload-report-btn {
+    }
+    .new-multiple-btn {
+      margin-left: 40px;
+      background-color: #5a8bff;
+      color: #fff;
+      padding-bottom: 26px;
+      border-bottom: none;
+      padding-top: 7px;
+      height: 28px;
+    }
+  }
+  .ant-btn{
+    border-radius: 20px;
+  }
+  .ant-btn-primary{
+    background-color: #f0f2fb;
+    border:none;
+    color:#000;
+  }
+   .paginationBox{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    ul{
+       margin-bottom: 20px;
+       .ant-pagination-item-active{
+        background: #5a8bff;
+        border-color:#5a8bff;
+    }
+    }
+    }
+  .report {
+    background: #ffffff;
+
+    .middle {
+      margin-top: 20px;
+      .reportConent{
+          display: flex;
+          align-items: center;
+          // padding:0 4%;
+          height: 60px;
+          line-height: 60px;
+          .checkBox{
+             width: 4%;
+          }
+          .reportMessage{
+              width: 21%;
+              font-size: 18px;
+              color: #5a8bff;
+              border-left: 1px solid #ccc;
+              border-right: 1px solid #ccc;
+              .reportName{
+                font-size: 18px;
+                color:#000;
+                cursor: pointer;
+                margin: 10px auto;
+                width: 80%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+               }
+          }
+          .reportDates{
+            font-size: 18px;
+            width: 34%;
+            border-right: 1px solid #ccc;
+          }
+          .reportNames{
+            font-size: 18px;
+            color: #000;
+          }
+          .reportDate{
+            font-size: 18px;
+            color: #5a8bff;
+            width: 34%;
+            border-right: 1px solid #ccc;
+       }
+          .reportCunt{
+              width: 11%;
+              font-size: 18px;
+              color: #5a8bff;
+              border-right: 1px solid #ccc;
+          }
+          .reportOperation-other{
+              width: 10%;
+              text-align: center;
+              font-size: 18px;
+              color: #5a8bff;
+              margin-left: 20px;
+          }
+          .reportOperation{
+               width: 10%;
+               display: flex;
+               margin-left: 20px;
+               align-items: center;
+               justify-content: space-between;
+               .deleteReport{
+                   cursor:pointer;
+
+                   .fa{
+                    font-size: 18px;
+                 }
+               }
+               .reportAsWord{
+
+                   cursor:pointer;
+                  .fa{
+                     font-size: 18px;
+                  }
+               }
+          }
+
+      }
+      .opinion-detail-item{
+          text-align: center;
+      }
+      .opinion-detail-item:nth-child(even){
+        background: #f7f7f7;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .ant-table {
+        font-size: 16px;
+        width: 100%;
+        .thead{
+          height:32px;
+          padding: 3px 8px;
+
+        }
+        .ant-table-thead >tr>th{
+           text-align: center;
+           height:32px;
+           padding: 3px 8px;
+           background: #EEEEEE;
+        }
+        .flexBox{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           width: 56%;
+           margin: 0 auto;
+           .icon{
+             cursor: pointer;
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              background: #E5E5E5;
+              border-radius: 4px;
+              margin-left: 5px;
+              .fa{
+                  font-size: 15px;
+                  margin: 0;
+              }
+           }
+        }
+
+        .ant-table-tbody tr:nth-of-type(even){
+            background: #F5F5F5;
+        }
+        .ant-table-tbody tr td:nth-child(2){
+           font-weight: 600;
+        }
+        .ant-table-tbody tr td:nth-child(3),.ant-table-tbody tr td:nth-child(4){
+           text-align: center;
+           width: 20%;
+        }
+        .ant-table-tbody tr td:nth-child(5){
+            display: none;
+        }
+        .fa {
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+          cursor: pointer;
+          &:hover {
+            color: #108EE9;
+          }
+        }
+      }
+    }
+  }
+}

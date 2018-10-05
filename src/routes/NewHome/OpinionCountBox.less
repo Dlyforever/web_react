@@ -1,0 +1,55 @@
+.opinion-count-box {
+  margin-top: 10px;
+  font-size: 14px;
+  min-height: 492px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  max-height: 492px;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),
+  0 2px 2px 0 rgba(0,0,0,0.14),
+  0 1px 5px 0px rgba(0,0,0,0.12);
+  .container {
+    // padding: 0 20px 0 20px;
+    .top {
+      height: 44px;
+      line-height: 43px;
+      display: flex;
+      justify-content: space-between;
+      .title {
+        font-size: 16px;
+        margin-left: 20px;
+        .txt {
+          margin-left: 20px;
+        }
+      }
+      .more {
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 14px;
+      }
+    }
+    .bottom {
+      display: flex;
+      .count-table {
+        border-spacing: 0;
+        width: 60%;
+        height:426px;
+        tr {
+          td {
+            width: 20%;
+            text-align: center;
+            &:last-child {
+              border-right: 0;
+            }
+          }
+          &:last-child {
+            td {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

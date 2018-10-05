@@ -1,0 +1,248 @@
+.collection-opinion-wrapper {
+  position: relative;
+  width: 100%;
+  .ant-dropdown{
+     height: 322px;
+     overflow: auto;
+     min-width:100px;
+     z-index: 500;
+  }
+  .collection-opinion {
+    margin:10px 20px 20px 20px;
+    font-size: 14px;
+    display: flex;
+    .left-boxes {
+      width: 11%;
+      margin-right: 20px;
+      position: fixed;
+      left:85.6%;
+      .first-box {
+        background-color: #FFFFFF;
+        .top {
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          // border:1px solid #008cee;
+          cursor: pointer;
+          .btn {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .bottom::-webkit-scrollbar {
+          display: none;
+        }
+        .bottom {
+          overflow: auto;
+          max-height: 422px;
+          -ms-scroll-chaining: chained;
+          -ms-overflow-style: none;
+          -ms-content-zooming: zoom;
+          -ms-scroll-rails: none;
+          -ms-content-zoom-limit-min: 100%;
+          -ms-content-zoom-limit-max: 500%;
+          -ms-scroll-snap-type: proximity;
+          -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+          -ms-overflow-style: none;
+          .collection-list {
+            .collection-list-item {
+              height: 40px;
+              line-height: 40px;
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-bottom: 1px solid #E4EBF7;
+              .ant-dropdown-trigger{
+                cursor: pointer;
+              }
+              .collection-name {
+                cursor: pointer;
+                width: 80%;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+              }
+              .collection-icon {
+                cursor: pointer;
+                width: 20%;
+              }
+            }
+            .collection-list-item-active {
+              height: 40px;
+              line-height: 40px;
+              display: flex;
+              justify-content: space-between;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-bottom: 1px solid #eeeeee;
+              background: #5a8bff;
+              .collection-name {
+                cursor: pointer;
+                width: 80%;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+              }
+              .collection-icon {
+                cursor: pointer;
+                width: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .opinion-list {
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      width: 84%;
+      .ant-checkbox + span{
+        padding-left: 35px;
+        color: #5a8bff;
+      }
+      .top {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        border-bottom: 1px solid #eeeeee;
+        background: #F7F7F7;
+        font-size: 16px;
+        .left {
+          display: flex;
+          justify-content: flex-start;
+          .choose-all{
+            span{
+              font-size: 16px;
+            }
+          }
+
+          .operate-all {
+            margin-left: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color:#000;
+            span {
+              margin-left: 6px;
+            }
+          }
+        }
+        .right-btn {
+          margin-right: 20px;
+        }
+      }
+      .bottom {
+        background-color: #ffffff;
+        .opinion-detail-wrapper {
+          .opinion-detail-item {
+            border-bottom: 1px solid #eeeeee;
+            padding-left: 10px;
+            padding-right: 20px;
+            min-height: 85px;
+            display: flex;
+            align-items: center;
+            &:nth-child(even) {
+              background: #f7f7f7;
+            }
+            .item-top {
+              width: 74%;
+              display: flex;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-left: 1px solid #eeeeee;
+              margin-left: 10px;
+              flex-direction: column;
+              .ant-checkbox-wrapper{
+                top: 30px;
+              }
+              .laba{
+                top: 30px;
+              }
+              .conent{
+                 display: flex;
+              }
+              .item-bottom{
+                margin-top: 20px;
+              }
+              .negative {
+                margin-left: 20px;
+                .inner-type {
+                  width: 32px;
+                  height: 20px;
+                  border-radius: 4px;
+                  line-height: 20px;
+                }
+              }
+              .title {
+                margin-left: 20px;
+                font-size: 16px;
+                cursor: pointer;
+              }
+            }
+            .item-middle {
+              margin-left: 6%;
+              .left {
+                width: 80%;
+                margin-left: 120px;
+                .summary {
+                  font-size: 12px;
+                }
+                .similar-info {
+                  color: #42b9f5;
+                  padding-left: 20px;
+                }
+              }
+              .right {
+                text-align: center;
+                .base-operate {
+                  height: 30px;
+                  .fa {
+                    cursor: pointer;
+                    padding: 10px;
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+            .item-bottom {
+              display: flex;
+              margin-left: 40px;
+              .key {
+                display: flex;
+                .keywords {
+                  margin-left: 10px;
+                }
+              }
+              .resource {
+                .source {
+                  color: #ccc;
+                  padding-left: 30px;
+                }
+              }
+              .pubdate {
+                margin-left: 80px;
+                .date {
+                  padding-left: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pagintion-wrapper {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        .pagintion {
+          margin-bottom: 20px;
+          .ant-pagination-item-active{
+            background: #5a8bff;
+            border-color:#5a8bff;
+        }
+        }
+      }
+    }
+  }
+}

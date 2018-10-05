@@ -1,0 +1,200 @@
+.loginbox{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .login{
+    padding-top: 60px;
+    padding-bottom: 160px;
+    height: 100%;
+    min-height: 630px;
+    .logo{
+      height: 100%;
+      display: flex;
+      .img{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 60%;
+          height: 60%;
+        }
+      }
+      .form{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        margin-top: 6%;
+        .loginlogo{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          span{
+            text-align: center;
+            margin: 20px 0;
+            color: #adaeb2;
+          }
+          img{
+            width: 150px;
+          }
+        }
+        .logoipt{
+          width: 40%;
+        }
+      }
+    }
+    .ant-modal{
+      width: 220px !important;
+      .ant-modal-content{
+        height: 220px;
+      }
+      .ant-modal-body{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .ant-modal-wrap{
+      position: absolute;
+      overflow: initial;
+      top: -320px;
+      left: 53px;
+    }
+  }
+  .z-header {
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    top:0;
+    z-index: 997;
+    width: 100%;
+    .ant-menu{
+      box-shadow: 1px 1px 1px #ccc;
+      &:first-child{
+        box-shadow: 0px 1px 1px #ccc;
+      }
+      &:last-child{
+        box-shadow: 0px 1px 1px #ccc; 
+      }
+    }
+    .top {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      .left {
+        width: 28%;
+        display: flex;
+        align-items: center;
+        margin-left: -30px;
+        cursor: pointer;
+        .logo {
+          width: 100px;
+          margin-left: 68px;
+        }
+        .name {
+          font-size: 22px;
+          margin-left: 10px;
+        }
+        .ant-menu-item {
+          font-size: 16px!important;
+          a{
+            text-align: left;
+          }
+        }
+      }
+      .right {
+        position: relative;
+        width: 71%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 68px;
+        .nav-bar{
+           li{
+             float:left;
+             margin-right: 40px;
+             font-size: 16px;
+             cursor: pointer;
+           }
+           .normal{
+            a{
+              color:#fff;
+              text-decoration: none;
+             }
+           }
+           .active{
+             a{
+               color:#ffa000;
+               text-decoration: none;
+             }
+           }
+        }
+        .qq {
+          margin-right: 18px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .notify {
+          margin-right: 24px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .user-info {
+          display: flex;
+          cursor: pointer;
+          .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .user-item {
+          position: absolute;
+          z-index: 99;
+          background-color: #ffffff;
+          color: #000000;
+          top: 64px;
+          width: 140px;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+          li {
+            height: 30px;
+            line-height: 30px;
+          }
+          .setting {
+            border-bottom: 1px solid #000000;
+          }
+          .item {
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+              background-color: #42b9f5;
+            }
+          }
+          .esc {
+            border-top: 1px solid #000000;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+              background-color: #42b9f5;
+            }
+          }
+  
+        }
+        .item-change-theme {
+          position: fixed;
+          top: 40%;
+          right: 0;
+          z-index: 99;
+          .close {
+            font-size: 24px;
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
